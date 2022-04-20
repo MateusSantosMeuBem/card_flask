@@ -6,4 +6,6 @@ This a web application using [Flask](https://flask.palletsprojects.com/en/2.1.x/
 To run this application, we recommend you to use a [Docker](https://www.docker.com/) container. 
 Just run the fallow command:
 
-`docker-compose up`
+```sh
+docker-compose up
+```
