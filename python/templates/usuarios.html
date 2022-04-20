@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <style>
+        :root{
+            font-size: 16px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            color: rgb(22, 22, 22);
+        }
+
+        body{
+            background-color: rgb(28, 28, 28);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+        }
+        
+        main{
+            align-items: center;
+            display: flex;
+            max-width: 300px;
+            border: 2px solid rgb(23, 20, 20);
+            gap: 5px;
+            flex-direction: column;
+            background-color: rgb(63, 63, 63);
+            padding: 20px 14px;
+            border-radius: 10px;
+
+        }
+
+        img{
+            width: 150px;
+            border: 2px solid rgb(23, 20, 20);
+            padding: 0;
+            border-radius: 50%;
+        }
+
+        h2{
+            font-size: 1.1rem;
+        }
+
+        h3{
+            font-size: 0.9rem;
+        }
+
+        h4{
+            display: flex;
+            gap: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <img src="{{nome_usuario.avatar_url}}">
+        <h1>{{nome_usuario.name}}</h1>
+        <h2>{{nome_usuario.login}}</h2>
+        <h3>{{nome_usuario.bio}}</h3>
+        <h4>
+            <p>Followers {{nome_usuario.followers}}</p>
+            <p>Following {{nome_usuario.following}}</p>
+        </h4>
+    </main>
+</body>
+</html>
